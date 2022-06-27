@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Startseite</title>
+    <link rel="stylesheet" type="text/css" href="Projekt.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Startseite</h1>
+    </header>
+    <nav>
+      <a class="active" href="Startseite.html">Startseite</a>
+      <a href="Lebenslauf.html">Lebenslauf</a>
+      <a href="Hobbys.html">Hobbys</a>
+      <a href="Karriere.html">Karriere</a>
+    </nav>
+    <main>
+      <h3>Was ist der Inhalt dieser Website und was bringt mir diese?</h3>
+      <p>
+        Hallo, mein Name ist Omat Diego Ozan Pereira und ich bin der Ersteller
+        dieser Website.
+      </p>
+      <figure>
+        <div class="myself">
+          <img src="IMG_0194.PNG" alt="Bild von Omar Diego Ozan Pereira" />
+        </div>
+        <figcaption>Ein Bild von Omar Diego Ozan Pereira:</figcaption>
+      </figure>
+      <p>
+        In dieser Website werden sie mich besser kennenlernen, falls sie diese
+        Website komplett fertig lesen werden sie meinen Lebenslauf kennen, was
+        ich für Hobbys habe, meine Karriere und wie sie mich erreichen können.
+        <br />
+        Was wollen sie als erstes über mich Wissen?
+      </p>
+      <a href="Lebenslauf.html">Meinen Lebenslauf</a>
+      <br />
+      <a href="Hobbys.html">Meine Hobbys</a>
+      <br />
+      <a href="Karriere.html">Meine bisherige Karriere</a>
+    </main>
+    <aside>
+      <p>
+        Insgesamt habe ich 39 Kämpfe bestriten von 2017-2020 und 2022- fast die
+        Hälfte der Kämpfe habe ich international bestriten.
+      </p>
+      <img
+        src="c989d969-cbf3-4543-94b1-54dcae6a1f3f.jpg"
+        alt="Bild von Omar Diego Ozan Pereira"
+      />
+    </aside>
+    <footer>
+      <h3>Kontakt</h3>
+      <div class="socialimg">
+        <a
+          href="https://www.linkedin.com/in/omar-diego-ozan-pereira-61a512225/"
+        >
+          <img
+            src="https://bankimooncentre.org/wp-content/uploads/2020/05/LinkedIn-Icon-Square.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://www.instagram.com/omardozp/">
+          <img
+            src="https://img.freepik.com/vektoren-kostenlos/instagram-logo_1199-122.jpg?1?w=360"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+      &copy; Copright 2022
+      <p>Omar Diego Ozan Pereira</p>
+      <p>Mobiltelefon: <a href="tel:+41764140217">+41 76 414 02 17</a></p>
+      <p>
+        E-Mail: <a href="mailto:omarozan361@gmail.com">omarozan361@gmail.com</a>
+      </p>
+      <form
+        action="https://gibm.becknet.ch/formular/formular.php"
+        method="post"
+      >
+        <p>
+          Bei Fragen oder Meinungen können sie dieses Formular korrekt ausfüllen
+          und abschicken. <br />
+        </p>
+        <div>
+          <label>Anrede *</label><br />
+
+          <input type="radio" name="anrede" id="frau" value="Frau" required />
+          <label for="frau">Frau</label>
+
+          <input type="radio" name="anrede" id="herr" value="Herr" />
+          <label for="herr">Herr</label>
+
+          <input type="radio" name="anrede" id="anderes" value="Anderes" />
+          <label for="anderes">Anderes</label>
+        </div>
+
+        <div>
+          <label for="vorname">Vorname *</label><br />
+
+          <input
+            type="text"
+            id="vorname"
+            name="vorname"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="nachname">Nachname *</label><br />
+
+          <input
+            type="text"
+            id="nachname"
+            name="nachname"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="strasse">Strasse *</label><br />
+          <input
+            type="text"
+            id="strasse"
+            name="strasse"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="plz">PLZ *</label><br />
+
+          <input
+            type="number"
+            id="plz"
+            name="plz"
+            min="1000"
+            max="9999"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="ort">Ort *</label><br />
+
+          <input
+            type="text"
+            id="ort"
+            name="ort"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email *</label><br />
+
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="nachricht">Nachricht</label><br />
+
+          <textarea
+            name="nachricht"
+            id="nachricht"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Senden" />
+
+          <input type="reset" value="Löschen" />
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
