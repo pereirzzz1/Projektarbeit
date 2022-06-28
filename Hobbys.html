@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hobbys</title>
+    <link rel="stylesheet" type="text/css" href="Projekt.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hobbys</h1>
+    </header>
+    <nav>
+      <a href="Startseite.html">Startseite</a>
+      <a href="Lebenslauf.html">Lebenslauf</a>
+      <a class="active" href="Hobbys.html">Hobbys</a>
+      <a href="Karriere.html">Karriere</a>
+      <a href="Impressum.html">Impressum</a>
+    </nav>
+    <main>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2012/10/25/23/32/boxing-62867_960_720.jpg"
+            alt="Boxen"
+          />
+          <div class="text">Boxen</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img
+            src="https://media.istockphoto.com/photos/woman-standing-in-front-of-modern-city-at-night-picture-id1304916935?b=1&k=20&m=1304916935&s=170667a&w=0&h=TFNuNsDRZtvbtyUapTe5mQqVsAUTq-HwbB_OWGx3Ozc="
+            alt="Freunde"
+          />
+          <div class="text">Mit Freunden rausgehen</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img
+            src="https://cdn.pixabay.com/photo/2016/11/21/15/08/playstation-1845880__340.jpg"
+            alt="Zocken"
+          />
+          <div class="text">Zocken</div>
+        </div>
+      </div>
+      <br />
+
+      <div style="text-align: center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {
+            slideIndex = 1;
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+          setTimeout(showSlides, 10000); // Change image every 10 seconds
+        }
+      </script>
+
+      <p>Die oberen genannten Hobbys sind meine drei Lieblingshobbys.</p>
+      <h2>Zocken</h2>
+      <p>
+        Dies ist mein dritt liebstes Hobby, ich spiele auf der PS4, meistens
+        zocke ich alleine undzwar Spiele wie NBA2k, FIFA, TheLastofus,
+        Assassins. <br />
+        Ich spiele meist am Abend wenn mir langweilig ist, aber dies ist auch
+        eine gute Abwechslung da ich meist draussen oder im Training bin.
+      </p>
+      <h2>Mit Freunden rausgehen</h2>
+      <p>
+        Dies tue ich meistens am Freitag oder Samstag, mit meinen Freunden gehe
+        ich meist an einen gemütlichen Ort wo wir dann meistens essen oder
+        trinken und über die Welt reden. <br />
+        Wir gehen nie auf Partys, wir sind ein kleiner Freundeskreis in dem man
+        sich wohl fühlt und alle ehrlich sind und es nie stress gibt, darum
+        behalten wir unseren Kreis klein damit keiner die Ruhe in diesem
+        Freundeskreis stört.
+      </p>
+      <h2>Boxen</h2>
+      <p>
+        Mein absolutes Lieblingshobby, Boxen. <br />
+        Persönlich ist dies mein Lieblingshobby da ich dies am meisten und am
+        längsten mache, seit 2015 tue ich Boxen mehr zu dem findest du in meiner
+        <a href="Karriere.html"> Karriere.</a>
+      </p>
+    </main>
+    <aside>
+      <p>
+        In meinem ersten Lebensjahr habe ich fast meinen linken Zehennagel
+        verloren, da ein Aeschenbecher auf meinen Zehen gefallen ist. <br />
+        Die Ärzte konnten meinen Zehen noch retten da er noch an einer Fasser
+        gehangen ist.
+      </p>
+      <img
+        src="https://media.istockphoto.com/photos/medical-equipment-on-the-background-of-group-of-health-workers-in-the-picture-id1139755582?b=1&k=20&m=1139755582&s=170667a&w=0&h=Lpef6lXiCbIcXjs0NAYubWtt-8KPiF-V0lHU354W6so="
+        alt="Spital"
+      />
+    </aside>
+    <footer>
+      <h3>Kontakt</h3>
+      <div class="socialimg">
+        <a
+          href="https://www.linkedin.com/in/omar-diego-ozan-pereira-61a512225/"
+        >
+          <img
+            src="https://bankimooncentre.org/wp-content/uploads/2020/05/LinkedIn-Icon-Square.png"
+            alt="LinkedIn"
+          />
+        </a>
+        <a href="https://www.instagram.com/omardozp/">
+          <img
+            src="https://img.freepik.com/vektoren-kostenlos/instagram-logo_1199-122.jpg?1?w=360"
+            alt="Instagram"
+          />
+        </a>
+      </div>
+      &copy; Copright 2022
+      <p>Omar Diego Ozan Pereira</p>
+      <p>Mobiltelefon: <a href="tel:+41764140217">+41 76 414 02 17</a></p>
+      <p>
+        E-Mail: <a href="mailto:omarozan361@gmail.com">omarozan361@gmail.com</a>
+      </p>
+      <form
+        action="https://gibm.becknet.ch/formular/formular.php"
+        method="post"
+      >
+        <p>
+          Bei Fragen oder Meinungen können sie dieses Formular korrekt ausfüllen
+          und abschicken. <br />
+        </p>
+        <div>
+          <label>Anrede *</label><br />
+
+          <input type="radio" name="anrede" id="frau" value="Frau" required />
+          <label for="frau">Frau</label>
+
+          <input type="radio" name="anrede" id="herr" value="Herr" />
+          <label for="herr">Herr</label>
+
+          <input type="radio" name="anrede" id="anderes" value="Anderes" />
+          <label for="anderes">Anderes</label>
+        </div>
+
+        <div>
+          <label for="vorname">Vorname *</label><br />
+
+          <input
+            type="text"
+            id="vorname"
+            name="vorname"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="nachname">Nachname *</label><br />
+
+          <input
+            type="text"
+            id="nachname"
+            name="nachname"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="strasse">Strasse *</label><br />
+          <input
+            type="text"
+            id="strasse"
+            name="strasse"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="plz">PLZ *</label><br />
+
+          <input
+            type="number"
+            id="plz"
+            name="plz"
+            min="1000"
+            max="9999"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="ort">Ort *</label><br />
+
+          <input
+            type="text"
+            id="ort"
+            name="ort"
+            minlength="1"
+            maxlength="100"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="email">Email *</label><br />
+
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div>
+          <label for="nachricht">Nachricht</label><br />
+
+          <textarea
+            name="nachricht"
+            id="nachricht"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <div>
+          <input type="submit" value="Senden" />
+
+          <input type="reset" value="Löschen" />
+        </div>
+      </form>
+    </footer>
+  </body>
+</html>
